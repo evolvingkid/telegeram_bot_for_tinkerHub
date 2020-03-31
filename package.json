@@ -1,0 +1,19 @@
+{
+  "name": "telegrambot",
+  "version": "1.0.0",
+  "description": "This is telegram bot to connect with flutter apps",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "telegram",
+    "bot"
+  ],
+  "author": "evolvingkid",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "telegraf": "^3.37.0"
+  }
+}
