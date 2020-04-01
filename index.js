@@ -1,13 +1,18 @@
-const Telegraf = require('telegraf')
+var telegram = require('telegram-bot-api');
 
-const bot = new Telegraf('');
 
-bot.start((ctx) => ctx.reply('Welcome!'));
+var api = new telegram({
+    token: '',
+    updates: {
+        enabled: true
+    }
+});
 
-bot.help((ctx) => ctx.reply('Send me a sticker'));
 
-bot.on('sticker', (ctx) => ctx.reply('👍'));
+const basicInfo = require('./modules/bot_info');
 
-bot.hears('hi', (ctx) => ctx.reply('Hey there'));
+basicInfo(api);
 
-bot.launch();
+
+
+
