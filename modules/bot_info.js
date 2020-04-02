@@ -1,14 +1,8 @@
 
-function basicInfo(api) {
-
-    api.getMe()
-        .then(function (data) {
-            console.log(data);
-        })
-        .catch(function (err) {
-            console.log(err);
-        });
-
+async function basicInfo(api) {
+    var data = await api.getMe();
+    //console.log(data);
+    return data;
 }
 
 module.exports = basicInfo;
